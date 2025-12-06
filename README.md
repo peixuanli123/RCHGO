@@ -20,6 +20,13 @@ MCFGP derives three manually crafted features from protein sequences across diff
    
 <li> cudnn>=8.9.7 </li>  
 
+### 2. Software  
+<li> <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/">BLAST</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate PSSM feature &nbsp ###### </li>
+<li> <a href="https://www.ebi.ac.uk/interpro/download/">InterProScan</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate FDBIV feature &nbsp ######  </li>
+<li> <a href="https://github.com/google-deepmind/alphafold">AlphaFold2</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsppredict 3D structures of proteins &nbsp ######  </li>
+
+
+
 
 
 
