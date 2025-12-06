@@ -30,6 +30,10 @@ MCFGP derives three manually crafted features from protein sequences across diff
 ### 3. Data
 <li> <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  </li>
 
+### 4. MCFGP
+4.1 Generate PSSM feature
+    python PSSM.py sequence_file, sequence_dir, origin_pssm_dir, log_pssm_dir, thread_number
+    e.g., python PSSM.py ./test_sequence.fasta ./sequence/ ./original_pssm/ ./log_pssm/ 30
 
 
 
