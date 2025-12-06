@@ -18,7 +18,7 @@ MCFGP derives three manually crafted features from protein sequences across diff
    
 <li> CUDA>=12.1  </li>
    
-<li> cudnn>=8.2.1 </li>  
+<li> cudnn>=8.9.7 </li>  
 
 
 
