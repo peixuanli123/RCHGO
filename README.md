@@ -32,10 +32,9 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
 ### 4. MCFGP
 4.1 Generate PSSM feature  
-    python PSSM.py sequence_file, sequence_dir, origin_pssm_dir, log_pssm_dir, thread_number  
-    e.g., python PSSM.py ./test_sequence.fasta ./sequence/ ./original_pssm/ ./log_pssm/ 30  
-4.2 Predict 3D structures 
-    see details in https://github.com/google-deepmind/alphafold  
+    python PSSM.py ./test_sequence.fasta ./sequence/ ./original_pssm/ ./log_pssm/ 30  
+4.2 Predict 3D structures  
+    sh run_alphafold.sh --fasta_paths ./test_sequence.fasta --output_dir ./alphafold_predictions/   
 4.3 
 
 
