@@ -41,7 +41,7 @@ MCFGP derives three manually crafted features from protein sequences across diff
     argv[5]: thread number in multiple threading (input2)  
       
     e.g., python ./MCFGP/PSSM.py ./test_sequence.fasta ./sequence/ ./original_pssm/ ./test_pssm/ 30  
-4.2 Predict 3D structures  
+<b>4.2 Predict 3D structures</b>  
     sh run_alphafold.sh -d argv[1] -o argv[2] -f argv[3] -t argv[4] --gpu_device=0   
     argv[1]: Alphafold2 database directory (input1)     
     argv[2]: predicted structure directory (output1, **** we need ****)   
@@ -50,12 +50,29 @@ MCFGP derives three manually crafted features from protein sequences across diff
       
     e.g., sh run_alphafold.sh -d /data/library/database -o ./test_structures/ -f ./test_sequence.fasta -t 2020-05-14 --gpu_device=0 
 
-4.3 Generate HSCM feature  
+<b>4.3 Generate HSCM feature</b>  
     python Create_Predict_Structure_Feature.py argv[1] argv[2]  
     argv[1]: predicted structures directory (input1)       
     argv[2]: HSCM feature directory (output1, **** we need ****)     
     
     e.g., python Create_Predict_Structure_Feature.py /test_structures/  ./test_hscm/  
+
+<b>4.4 Generate FDBIV feature</b>  
+    (1) python run_interproscan.py argv[1] argv[2] argv[3]  
+    argv[1]: workdir (input1)  
+    argv[2]: split number of test sequences (input2)    
+    argv[3]: thread number in multiple threading (input3)  
+
+    e.g., python run_interproscan.py ./interpro/ 100 30
+    
+(2) python postdeal_interproscan.py argv[1] argv[2] argv[3]    
+    argv[1]: interpro result directory (input1)  
+    argv[2]: splited interpro result directory (output1)  
+    argv[3]: splited interpro array directory (output2, **** we need ****)
+
+    e.g., python postdeal_interproscan.py ./interpro/results/ ./interpro/entry_name/ ./interpro/entry_array/
+
+
 
 
 
