@@ -81,11 +81,16 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
 <b>4.6 Create graph from predicted structures</b>  
    (1) python generate_points.py argv[1] argv[2]    
-   argv[1]: workdir  
-   argv[2]: go type
+   argv[1]: workdir (input1)  
+   argv[2]: go type (input2)
 
     e.g., python generate_points.py ./data/ mf/bp/cc
-   (2)
+   (2) python process_graph_prottrans_pssm_psd.py -d argv[1] -t argv[2]  
+   argv[1]: go type  (input1)  
+   argv[2]: threshold for determining contact map (input2)
+
+    e.g., python process_graph_prottrans_pssm_psd.py -d mf/bp/cc -t 10 
+   
    
 
 
