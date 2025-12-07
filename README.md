@@ -90,6 +90,12 @@ MCFGP derives three manually crafted features from protein sequences across diff
    argv[2]: threshold for determining contact map (input2)
 
     e.g., python process_graph_prottrans_pssm_psd.py -d mf/bp/cc -t 10 
+
+  (3) python Create_InterPro_Array.py  argv[1] argv[2]  
+  argv[1]:  workdir (input1)   
+  argv[2]: go type (input2)  
+
+    e.g., Create_InterPro_Array.py ./data/ mf/bp/cc 
    
    
 
