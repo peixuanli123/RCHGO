@@ -97,7 +97,7 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
     e.g., Create_InterPro_Array.py ./data/ mf/bp/cc 
    
-   
+<b>4.7 Train and evaluate MCFGP</b>     
 
 
 
