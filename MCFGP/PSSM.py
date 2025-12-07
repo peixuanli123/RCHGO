@@ -10,7 +10,7 @@ blast_file = "/data/yihengzhu/toolbars/sequence_homology_tools/PSSM/ncbi-blast-2
 db_file = "/data/yihengzhu/toolbars/sequence_homology_tools/PSSM/swiss_prot/uniprot_sprot"
 cut_off = 1024
 
-def run_psi_blast(query_file, output_file, iterations = 1, evalue = 1000000000):
+def run_psi_blast(query_file, output_file, iterations = 1, evalue = 0.001):
     cmd = [
         blast_file + "/psiblast",
         "-query", query_file,
