@@ -24,6 +24,7 @@ MCFGP derives three manually crafted features from protein sequences across diff
 <li> <a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/">BLAST</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate PSSM feature &nbsp ###### </li>
 <li> <a href="https://www.ebi.ac.uk/interpro/download/">InterProScan</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate FDBIV feature &nbsp ######  </li>
 <li> <a href="https://github.com/google-deepmind/alphafold">AlphaFold2</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsppredict 3D structures of proteins &nbsp ######  </li>
+<li> <a href="https://github.com/PDB-REDO/dssp">DSSP</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate HSCM feature  &nbsp ######  </li>
 <li> <a href="https://github.com/agemagician/ProtTrans">ProtT5-XL-UniRef50</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp###### &nbsp generate protein language model-based feature &nbsp ######  </li>
 
 
