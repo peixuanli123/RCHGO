@@ -32,26 +32,30 @@ MCFGP derives three manually crafted features from protein sequences across diff
 <li> <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  </li>
 
 ### 4. MCFGP
-4.1 Generate PSSM feature  
+<b>4.1 Generate PSSM feature</b>  
     python ./MCFGP/PSSM.py argv[1] argv[2] argv[3] argv[4] argv[5]   
     argv[1]: sequence file with fasta format  
     argv[2]: sequence directory   
     argv[3]: original pssm directory   
-    argv[4]: logistic pssm directory   
+    argv[4]: logistic pssm directory (**** we need ****)   
     argv[5]: thread number in multiple threading  
       
-    e.g., python ./MCFGP/PSSM.py ./test_sequence.fasta ./sequence/ ./original_pssm/ ./log_pssm/ 30  
+    e.g., python ./MCFGP/PSSM.py ./test_sequence.fasta ./sequence/ ./original_pssm/ ./test_pssm/ 30  
 4.2 Predict 3D structures  
     sh run_alphafold.sh -d argv[1] -o argv[2] -f argv[3] -t argv[4] --gpu_device=0   
     argv[1]: Alphafold2 database directory     
-    argv[2]: output directory  
+    argv[2]: output directory (**** we need ****)   
     argv[3]: sequence file with fasta format   
     argv[4]: database version
       
-    e.g., sh run_alphafold.sh -d /data/library/database -o example/ -f example/test_sequence.fasta -t 2020-05-14 --gpu_device=0 
+    e.g., sh run_alphafold.sh -d /data/library/database -o ./test_structures/ -f ./test_sequence.fasta -t 2020-05-14 --gpu_device=0 
 
-4.3 Generate HSCM feature
-    python 
+4.3 Generate HSCM feature  
+    python Create_Predict_Structure_Feature.py argv[1] argv[2]  
+    argv[1]: predicted structures directory       
+    argv[2]: HSCM feature directory (**** we need ****)     
+    
+    e.g., python Create_Predict_Structure_Feature.py /test_structures/  ./test_hscm/  
 
 
 
