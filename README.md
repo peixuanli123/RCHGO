@@ -52,8 +52,8 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
 4.3 Generate HSCM feature  
     python Create_Predict_Structure_Feature.py argv[1] argv[2]  
-    argv[1]: predicted structures directory       
-    argv[2]: HSCM feature directory (**** we need ****)     
+    argv[1]: predicted structures directory (input1)       
+    argv[2]: HSCM feature directory (output1, **** we need ****)     
     
     e.g., python Create_Predict_Structure_Feature.py /test_structures/  ./test_hscm/  
 
