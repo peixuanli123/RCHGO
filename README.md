@@ -72,6 +72,22 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
     e.g., python postdeal_interproscan.py ./interpro/results/ ./interpro/entry_name/ ./interpro/entry_array/
 
+<b>4.5 Create labels for training, validation, and test datasets</b>  
+   python Create_Label_Benchmark.py argv[1]  
+   argv[1]: workdir (input1)    
+
+    e.g., python Create_Label_Benchmark.py ./data/
+
+
+<b>4.6 Create graph from predicted structures</b>  
+   (1) python generate_points.py argv[1] argv[2]    
+   argv[1]: workdir  
+   argv[2]: go type
+
+    e.g., python generate_points.py ./data/ mf/bp/cc
+   (2)
+   
+
 
 
 
