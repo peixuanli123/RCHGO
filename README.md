@@ -134,6 +134,8 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
     e.g., python process_graph_plmgp.py -d mf/bp/cc -t 10 
 
+<b>5.4 Train and evaluate PLMGP</b>    
+
 
 
 
