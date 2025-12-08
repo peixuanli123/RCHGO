@@ -98,7 +98,7 @@ MCFGP derives three manually crafted features from protein sequences across diff
     e.g., Create_InterPro_Array.py ./data/ mf/bp/cc 
    
 <b>4.7 Train and evaluate MCFGP</b>    
-   python DPFunc_main_pssm_pss_interpro_gog.py argv[1] argv[2]  
+   python Run_MCFGP.py argv[1] argv[2]  
    argv[1]: go type (input1)  
    argv[2]: gpu id (input2)   
 
