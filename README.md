@@ -141,6 +141,15 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
     e.g., python Run_PLMGP.py mf/bp/cc 0
 
+### 6. RCHGO
+<b>6.1 Copy MCFGP/PLMGP prediction results to workspace</b>  
+python Copy_Results_LLM.py argv[1] argv[2]  
+argv[1]: original prediction result directory (input1)  
+argv[2]: copy prediction result directory (output1)  
+
+    e.g., python Copy_Results_LLM.py ./mcfgp_results/ ./ensemble/  
+    e.g., python Copy_Results_LLM.py ./plmgp_results/ ./ensemble/
+
 
 
 
