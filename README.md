@@ -156,10 +156,10 @@ argv[1]: workspace in the ensemble stage (input1)
 
     e.g., python Create_Ensemble_Dataset.py ./ensemble/  
     
-<b>6.3 Ensemble MCFGP and PLMGP prediction results for implementing RCHGO</b> 
-python MLP_Ensemble_SKL.py argv[1] agrv[2]
-argv[1]: workspace (input1) 
-agrv[2]: go type (input2)
+<b>6.3 Ensemble MCFGP and PLMGP prediction results for implementing RCHGO</b>   
+python MLP_Ensemble_SKL.py argv[1] agrv[2]  
+argv[1]: workspace (input1)   
+agrv[2]: go type (input2)  
 
     e.g., python MLP_Ensemble_SKL.py ./ensemble/rchgo/ MF/BP/CC 
 
