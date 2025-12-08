@@ -109,7 +109,12 @@ MCFGP derives three manually crafted features from protein sequences across diff
      e.g., python DPFunc_main_pssm_pss_interpro_gog.py mf/bp/cc 0
    
 ### 5. PLMGP
-<b>4.1 Generate PSSM feature</b>    
+<b>5.1 Generate PLM embeddings</b>    
+   python prottrans_extract.py -i argv[1] -o argv[2]   
+   argv[1]: sequence file with fasta format (input1)    
+   argv[2]: feature embedding directory (output1)  
+
+     e.g., python prottrans_extract.py -i ./test_sequence.fasta -o ./plm_embeddings/
 
 
 
