@@ -106,13 +106,13 @@ MCFGP derives three manually crafted features from protein sequences across diff
    argv[1]: go type (input1)  
    argv[2]: gpu id (input2)   
 
-    e.g., python DPFunc_main_pssm_pss_interpro_gog.py mf/bp/cc 0
+    e.g., python Run_MCFGP.py mf/bp/cc 0
    
 ### 5. PLMGP
 <b>5.1 Generate PLM embeddings</b>    
    python prottrans_extract.py -i argv[1] -o argv[2]   
    argv[1]: sequence file with fasta format (input1)    
-   argv[2]: feature embedding directory (output1)  
+   argv[2]: feature embedding directory (output1, **** we need ****)  
 
     e.g., python prottrans_extract.py -i ./test_sequence.fasta -o ./plm_embeddings/
 
@@ -135,7 +135,11 @@ MCFGP derives three manually crafted features from protein sequences across diff
     e.g., python process_graph_plmgp.py -d mf/bp/cc -t 10 
 
 <b>5.4 Train and evaluate PLMGP</b>    
+   python Run_PLMGP.py argv[1] argv[2]  
+   argv[1]: go type (input1)  
+   argv[2]: gpu id (input2)   
 
+    e.g., python Run_PLMGP.py mf/bp/cc 0
 
 
 
