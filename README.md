@@ -150,6 +150,21 @@ argv[2]: copy prediction result directory (output1)
     e.g., python Copy_Results_LLM.py ./mcfgp_results/ ./ensemble/  
     e.g., python Copy_Results_LLM.py ./plmgp_results/ ./ensemble/
 
+<b>6.2 Create training and testing dataset in the ensemble stage</b>  
+python Create_Ensemble_Dataset.py argv[1]  
+argv[1]: workspace in the ensemble stage (input1)
+
+    e.g., python Create_Ensemble_Dataset.py ./ensemble/  
+    
+<b>6.3 Ensemble MCFGP and PLMGP prediction results for implementing RCHGO</b> 
+python MLP_Ensemble_SKL.py argv[1] agrv[2]
+argv[1]: workspace (input1) 
+agrv[2]: go type (input2)
+
+    e.g., python MLP_Ensemble_SKL.py ./ensemble/rchgo/ MF/BP/CC 
+
+
+
 
 
 
