@@ -194,7 +194,7 @@ def main(data_cnf, gpu_number, epoch_number, round_index):
 
 if __name__ == '__main__':
 
-    epoch_number = 30
+    epoch_number = 50
     for round_index in range(1, 6):
         main(sys.argv[1], sys.argv[2], epoch_number, round_index)
 
