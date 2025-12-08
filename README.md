@@ -116,6 +116,12 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
      e.g., python prottrans_extract.py -i ./test_sequence.fasta -o ./plm_embeddings/
 
+<b>5.2 Create labels for training, validation, and test datasets</b>  
+   python Create_Label_Benchmark.py argv[1]  
+   argv[1]: workdir (input1)    
+
+    e.g., python Create_Label_Benchmark.py ./data/
+
 
 
 
