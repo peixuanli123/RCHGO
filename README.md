@@ -30,6 +30,10 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
 ### 3. Data
 <li> <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  </li>
+<li> <a href="https://www.ebi.ac.uk/GOA/index"</a>  Gene Ontology annotation database </li>
+<li> <a href="https://alphafold.ebi.ac.uk"</a>  Alphafold database </li>
+<li> <a href="https://alphafold.ebi.ac.uk"</a>  Benchmark dataset </li>
+<li> <a href="https://alphafold.ebi.ac.uk"</a>  Library </li>
 
 ### 4. MCFGP
 <b>4.1 Generate PSSM feature</b>  
@@ -104,7 +108,8 @@ MCFGP derives three manually crafted features from protein sequences across diff
 
      e.g., python DPFunc_main_pssm_pss_interpro_gog.py mf/bp/cc 0
    
-   
+### 5. PLMGP
+<b>4.1 Generate PSSM feature</b>    
 
 
 
