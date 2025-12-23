@@ -32,8 +32,8 @@ MCFGP derives three manually crafted features from protein sequences across diff
 <li> <a href="https://www.uniprot.org/help/downloads">Swiss-Prot database</a>  </li>
 <li> <a href="https://www.ebi.ac.uk/GOA/index"</a>  Gene Ontology annotation database </li>
 <li> <a href="https://alphafold.ebi.ac.uk"</a>  Alphafold database </li>
-<li> <a href="https://alphafold.ebi.ac.uk"</a>  Benchmark dataset </li>
-<li> <a href="https://alphafold.ebi.ac.uk"</a>  Library </li>
+<li> <a href="http://www.jcu-qiulab.com/static/servers/rchgo/benchmark_dataset.zip"</a>  Benchmark dataset </li>
+<li> <a href="http://www.jcu-qiulab.com/static/servers/rchgo/library.zip"</a>  Library </li>
 
 ### 4. MCFGP
 <b>4.1 Generate PSSM feature</b>  
